@@ -3,279 +3,77 @@
 <head>
 <meta charset='utf-8'>
 <title>Gmelius &middot; Towards a Cleaner and Better Gmail&trade;</title>
-<style type="text/css">
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{width:100%;font:12px/18px Helvetica,Arial,Verdana,sans-serif;color:#333;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHElEQVQIW2N8+vTpf2lpaUYGKIAzMARgKjFUAABibQgFYIaYJgAAAABJRU5ErkJggg==) #f1f1f1 repeat}.shadow{text-shadow:1px 1px 1px #fff}.clear{clear:both}b{font-weight:bold}.none{display:none}.shorturl{position:absolute;display:block;top:10px;margin-left:750px}#share{position:absolute;top:820px;margin-left:660px;width:280px;z-index:9999;background:url(../gmailadremover/IMG/index.png) no-repeat -383px -582px;padding-left:60px}#arrow{position:absolute;top:777px;margin-left:710px;width:200px;height:200px;background:url(../gmailadremover/IMG/index.png) no-repeat -146px -316px;z-index:0}#share ul{display:inline-block}#share ul li{display:inline-block;vertical-align:top;margin-right:10px}#share ul li:last-child{margin:0}#share ul li:first-child{margin-right:5px}li #fb-root{margin:0px}#nav{position:absolute;top:50px;margin-left:440px;width:550px;display:block;height:50px}#nav ul{margin:0;padding:0;display:inline}#nav ul li{display:inline;width:auto;margin-right:5px}#nav ul li:last-child{margin:0}#nav ul li a{color:#999;text-shadow:1px 1px 1px #fff;padding:6px 9px;font-weight:bold;font-size:16px;background-color:#f5f5f5;background:-moz-linear-gradient(right,#f4f4f4,#f7f7f7);background:-webkit-gradient(linear,right top,left top,from(#f4f4f4),to(#f7f7f7));border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;border:1px solid #eee}#nav ul li a:hover{color:#666;background:-moz-linear-gradient(left,#f2f2f2, #f7f7f7);background:-webkit-gradient(linear,left top,right top,from(#f2f2f2),to(#f7f7f7))}#nav ul li a:hover .heart{color:red}#nav ul li a:hover .spades{color:#000}#nav ul li a.twitter{margin-left:7px;background:url(../gmailadremover/IMG/index.png) transparent no-repeat 0 -598px;text-indent:-9999px;border:0;width:32px;height:32px;display:inline-block;padding:6px 0}#nav ul li a.twitter:hover{background:url(../gmailadremover/IMG/index.png) transparent no-repeat -35px -598px}a{text-decoration:none;cursor:pointer;color:inherit;border-bottom:1px dotted #ccc}a:hover{border:0;background:lightyellow;color:#0c0c0c}#wrapper{width:980px;margin:0 auto;}#content{background:#fff;padding:0px 20px 15px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;-moz-box-shadow:0 0 5px #ccc;-webkit-box-shadow:0 0 5px #ccc;box-shadow:0 0 5px #ccc;margin-top:30px}#content h2{font-size:19px;padding-top:25px}h1.logo{margin:20px 0 0;font-size:22px;background:url(../gmailadremover/IMG/logo.png) transparent no-repeat 0 0;width:auto;height:72px;padding:15px 0 0 100px;font-weight:bold;text-shadow:0px 1px 0px #e5e5ee}h3.slogan{margin:-46px 0 30px 102px;font-size:17px;color:#ccc;font-weight:bold}#downloads ul{margin:20px 0 0px 8px;padding:0;display:inline-block;width:100%}#downloads ul li{display:inline-block;width:30%;margin-right:1%;background:#f5f5f5;border-radius:10px;padding:10px 10px 0;-moz-box-shadow:0 0 5px #ccc;-webkit-box-shadow:0 0 5px #ccc;box-shadow:0 0 5px #ccc;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5',endColorstr='#dadada');background:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#dadada));background:-moz-linear-gradient(top, #f5f5f5, #dadada)}#downloads ul li:hover{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dadada',endColorstr='#f5f5f5');background:-webkit-gradient(linear,left top,left bottom,from(#dadada),to(#f5f5f5));background:-moz-linear-gradient(top, #dadada, #f5f5f5)}#downloads a{color:inherit}.download{font-weight:bold;font-size:105%}#downloads h2{font-weight:bold;font-size:20px}#downloads ul li:last-child{margin:0}.left{float:left;width:100px;height:90px;overflow:hidden}.firefox{background:url(../gmailadremover/IMG/index.png) no-repeat 0 0}.chrome{background:url(../gmailadremover/IMG/index.png) no-repeat -113px 0}.safari{background:url(../gmailadremover/IMG/index.png) no-repeat -227px 0}.opera{background:url(../gmailadremover/IMG/index.png) no-repeat -344px 0}.right{float:right;width:190px;padding-top:7px}p.please{background:url(../gmailadremover/IMG/index.png) no-repeat 0px -220px;top:650px;margin-left:660px;font-weight:bold;color:#ccc;padding-left:55px;z-index:99;position:absolute;display:block;width:257px;text-align:justify;}.margin{margin-bottom:18px}.versions{display:block;font-weight:bold;color:#999}#donate{width:71%;display:block;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;background-color:#eee;height:72px;margin:35px 6% 20px;padding:10px 10px 10px 140px;background:-webkit-gradient(linear,right top,left top,from(#eee),to(#f7f7f7));background:-moz-linear-gradient(right, #eee, #f7f7f7)}#donate h3{font-size:16px;font-weight:bold}#donate p{width:460px}#coffee{position:absolute;z-index:999;background:url(../gmailadremover/IMG/index.png) no-repeat 0 -446px;width:148px;height:128px;margin:-55px 0 0 -140px}#paypal{position:absolute;z-index:999;margin:-66px 0 0 498px;border-radius:6px;border:2px solid #f5f5f5;padding:8px 0 5px}#tweets{}#tweets p{font-size:12px;padding:0;line-height:17px;color:#999}.time{padding-left:10px}#faq{margin-bottom:10px}p{display:block;line-height:20px;padding:10px 0 0}ul.inline{margin:2% 6%;padding:10px 0 10px 10px;display:inline-block;width:86%;background-color:#eee;border:1px solid #dadada;border-radius:4px}ul.inline li.block{display:inline-block;vertical-align:top;width:auto;margin-right:6%}ul.inline li.z{margin:0}.q{font-weight:bold;padding-right:15px}li.block ul li{padding:3px 0}ul.inline2{margin:15px 0;padding:0;display:inline-block;width:100%}ul.inline2 li.comments{display:inline-block;vertical-align:top;width:650px}ul.inline2 li.testimonials{display:inline-block;vertical-align:top;margin:0;width:280px}.testimonials p{font-style:italic;font-family:Georgia,Times,serif;color:#999}blockquote{text-align:center;font-style:italic;padding:8px 0;color:#666}a.enfew{margin-top:15px;background:url(../gmailadremover/IMG/index.png) no-repeat -10px -123px;width:280px;height:60px;text-indent:-9999px;display:block;border:0}#footer{margin-bottom:30px}   #slider{width:982px;height:527px;margin:-1px 0 0 -1px;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;-moz-box-shadow:0 0 5px #dadada;-webkit-box-shadow:0 0 5px #dadada;box-shadow:0 0 5px #dadada;border:1px solid #fff}#featured{width:980px;height:525px;margin:1px 0 0 1px;overflow:hidden;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;background-color:#000;background-image:url(../gmailadremover/IMG/loading.gif),url(../gmailadremover/IMG/large.png);background-position:center center,center center;background-repeat:no-repeat}#featured>img, #featured>div,#featured>a{display:none}#featured img{border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;background-color:#fff}div.orbit-wrapper{ width:1px; height:1px; position:relative}div.orbit{ width:1px; height:1px; position:relative; overflow:hidden}div.orbit>img{ position:absolute; top:0; left:0; display:none}div.orbit>a{ border:none; position:absolute; top:0; left:0; line-height:0; display:none}.orbit>div{ position:absolute; top:0; left:0; width:100%; height:100%}div.timer{    width:40px;    height:40px;    overflow:hidden;    position:absolute;    top:10px;    right:10px;    opacity:.6;    cursor:pointer;    z-index:1001}span.rotator{    display:block;    width:40px;    height:40px;    position:absolute;    top:0;    left:-20px;    background:url(../gmailadremover/IMG/rotator-black.png) no-repeat;    z-index:3}span.mask{    display:block;    width:20px;    height:40px;    position:absolute;    top:0;    right:0;    z-index:2;    overflow:hidden}span.rotator.move{    left:0}span.mask.move{    width:40px;    left:0;    background:url(../gmailadremover/IMG/timer-black.png) repeat 0 0}span.pause{    display:block;    width:40px;    height:40px;    position:absolute;    top:0;    left:0;    background:url(../gmailadremover/IMG/pause-black.png) no-repeat;    z-index:4;    opacity:0}span.pause.active{    background:url(../gmailadremover/IMG/pause-black.png) no-repeat 0 -40px}div.timer:hover span.pause,span.pause.active{ opacity:1}.orbit-caption,.orbit-caption2{display:none;font-weight:normal;font-family:"HelveticaNeue","Helvetica-Neue",Helvetica,Arial,sans-serif}.orbit-caption b,.orbit-caption2 b{font-size:20px;display:block;margin-bottom:10px;color:#f1f1f1}.orbit-wrapper .orbit-caption{ background:#000; background:rgba(0,0,0,.65); z-index:1000; color:#fff;text-align:center;padding:10px 0 15px; font-size:18px; position:absolute; right:-1px; bottom:0px; width:100%}div.slider-nav{    display:block}div.slider-nav span{    width:78px;    height:100px;    text-indent:-9999px;    position:absolute;    z-index:1000;    top:50%;    margin-top:-50px;    cursor:pointer}div.slider-nav span.right{    background:url(../gmailadremover/IMG/right-arrow.png);    right:-3px}div.slider-nav span.left{    background:url(../gmailadremover/IMG/left-arrow.png); left:-1px}.orbit-bullets{    position:absolute;    z-index:1000;    list-style:none;    bottom:-40px;    left:50%;margin-left:-50px;    padding:0}.orbit-bullets li{    float:left;    margin-left:5px;    cursor:pointer;    color:#999;    text-indent:-9999px;    background:url(../gmailadremover/IMG/bullets.jpg) no-repeat 4px 0; width:13px; height:12px; overflow:hidden}.orbit-bullets li.active{ color:#222; background-position:-8px 0} .orbit-bullets li.has-thumb{ background:none; width:100px; height:75px}.orbit-bullets li.active.has-thumb{ background-position:0 0; border-top:2px solid #000}a#copy{border:1px solid #dadada;padding:1px 3px;background:#f5f5f5;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;cursor:pointer;}span#url{padding:1px 4px;background:#fff;border:1px solid #dadada;margin-right:0px}.swt{position:absolute;height:0;width:0;display:block;text-indent:-9999px;}
-</style>
-<!--META-->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<meta name="keywords" content="gmail,mail,webmail,email,ad,ads,remover,google,sponsors,advert,extension,addon,firefox,safari,chrome" />
-<meta name="description" content="No more ads in your Gmail™ for Firefox, Chrome, Safari and Opera. The only extension that removes completely all the ads you can find in Gmail and does much more." />
-<!--FACEBOOK-->
-<meta property="fb:admins" content="833120006"/>
-<meta property="fb:app_id" content="157908327612137"/>
-<meta property="og:title" content="Gmail Ad Remover"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="http://xpressyoo.github.com/gmelius/"/>
-<meta property="og:image" content="http://florianbersier.com/gmailadremover/IMG/thumbnail.jpg"/>
-<meta property="og:site_name" content="Florian Bersier"/>
-<meta property="og:description" content="No more ads in your Gmail™ for Firefox, Chrome, Safari and Opera. The only extension that removes completely all the ads you can find in Gmail and does much more."/>
-<!--FAVICON-->
-<link rel="shortcut icon" href="../gmailadremover/favicon.ico" />
-<!--THUMBNAIL--> 
-<link rel="image_src" href="../gmailadremover/IMG/thumbnail.jpg" />  
-<!--STYLE-->
-<link media='screen' href='../gmailadremover/css.css' type='text/css' rel='stylesheet' />
-<!--JS-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script type="text/javascript" src="../gmailadremover/slider.min.js"></script>
-<!--HUMANS.txt-->
-<link type="text/plain" rel="author" href="../gmailadremover/humans.txt" />
-<!--Flattr-->
-<script type="text/javascript">
-/* <![CDATA[ */
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();
-/* ]]> */
-</script>
-</head><?php flush(); ?>
+
+  <style type="text/css">
+    body {
+      margin-top: 1.0em;
+      background-color: #f8f8f8;
+      font-family: Helvetica, Arial, FreeSans, san-serif;
+      color: #000000;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+    h1 { font-size: 3.8em; color: #3c9871; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #3c9871; }
+    h3 { text-align: center; color: #3c9871; }
+    a { color: #3c9871; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+    pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+  </style>
+</head>
 
 <body>
-<div id="wrapper">
+  <a href="http://github.com/xpressyoo/gmelius"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-<h1 class="logo shadow">Gmail&trade; Ad Remover</h1>
-<h3 class="slogan">No More Ads in your Gmail</h3>
-<span class="shorturl">Short URL: <span id="url">http://goo.gl/Vc4Bx</span> <a href="http://goo.gl/Vc4Bx" id="copy" title="Click to copy to clipboard">Copy it</a></span>
-<!--NAV-->
-<div id="nav">
-<ul>
-<li><a href="#downloads">Free Download</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#faq">FAQ</a></li>
-<li><a href="#social"><span class="spades">&spades;</span> Reviews</a></li>
-<li><a href="#donate"><span class="heart">&hearts;</span> Donate</a></li>
-<li><a class="twitter" href="http://twitter.com/gmailadremover" target="_blank" title="Follow Gmail Ad Remover on Twitter">Twitter</a></li>
-<!--<li><a class="facebook" href="https://www.facebook.com/pages/Gmail-Ad-Remover/218781674820326" target="_blank" title="Become a Fan">Facebook</a></li>-->
+  <div id="container">
 
-</ul>
-</div><!--#nav-->
+    <div class="download">
+      <a href="http://github.com/xpressyoo/gmelius/zipball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/xpressyoo/gmelius/tarball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
 
-<!--SLIDER-->
-<div id="slider">
-<div id="featured"> 
-<img src="../gmailadremover/IMG/intro.jpg" alt="Introduction" data-caption="#intro" />
-<img src="../gmailadremover/IMG/email.png" alt="Screenshot Gmail 1" data-caption="#email" />
-<img src="../gmailadremover/IMG/email5.png" alt="Screenshot Gmail 5" data-caption="#email5" />
-<img src="../gmailadremover/IMG/email2.png" alt="Screenshot Gmail 2" data-caption="#email2" />
-<img src="../gmailadremover/IMG/email3.png" alt="Screenshot Gmail 3" data-caption="#email3" />
+    <h1><a href="http://github.com/xpressyoo/gmelius">gmelius</a>
+      <span class="small">by <a href="http://github.com/xpressyoo">xpressyoo</a></span></h1>
 
-</div><!--#featured-->
-<span class="orbit-caption2" id="intro"><b>Download Gmail&trade; Ad Remover</b>An extension available for Firefox, Chrome, Safari and Opera that removes all the ads in Gmail.</span>
-<span class="orbit-caption" id="email"><b>Download Gmail&trade; Ad Remover</b>No more ads at the right of your screen, giving you more space to read and write your emails.</span>
-<span class="orbit-caption" id="email5"><b>Download Gmail&trade; Ad Remover</b>New Buttons and Functionalities, e.g. Expand All / Collapse All conversations.</span>
-<span class="orbit-caption" id="email2"><b>Download Gmail&trade; Ad Remover</b>No more ads at the bottom of your emails and no more sponsored links in the footer.</span>
-<span class="orbit-caption" id="email3"><b>Download Gmail&trade; Ad Remover</b>No more weblinks and emails get highlighted when mouse over.</span>
-</div><!--#slider-->
+    <div class="description">
+      Gmelius™ is a poly-browser extension that removes ads in Gmail™ and enhances Gmail's UI.
+    </div>
 
-<!--DOWNLOADS-->
-<div id="downloads" class="shadow">
+    <h2>Authors</h2>
+<p>Florian Bersier (info@xpressyoo.com)
+<br/>
+<br/>      </p>
+<h2>Contact</h2>
+<p>Florian Bersier (info@xpressyoo.com)
+<br/>      </p>
 
 
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="http://github.com/xpressyoo/gmelius/zipball/master">zip</a> or
+      <a href="http://github.com/xpressyoo/gmelius/tarball/master">tar</a> formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/xpressyoo/gmelius</pre>
+    </p>
 
-<?php
-$file_string = file_get_contents('https://addons.mozilla.org/en-US/statistics/addon/120014/');
-preg_match('#<td class="bigvalue" style="width: 19%;">(.*?)</td>#i', $file_string, $downloads);
-$downloads_out = $downloads[1];
-?>
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/xpressyoo/gmelius">xpressyoo/gmelius</a>
+    </div>
 
-<?php
-$file_string = file_get_contents('https://chrome.google.com/webstore/detail/dheionainndbbpoacpnopgmnihkcmnkl');
-preg_match('#<div class="detail-num-users">(.*?)</div>#i', $file_string, $downloadsc);
-$downloadsc_out = $downloadsc[1];
-?>
-<ul>
-<li>
-<a href="https://addons.mozilla.org/addon/gmail-ad-remover/" target="_blank"><div class="left firefox"></div><div class="right"><h2>Mozilla Firefox</h2><p><span class="download">Download it &rsaquo;</span> <span class="versions">All versions &middot; <?php echo $downloads_out; ?> downloads</span></p></div></a></li>
+  </div>
 
-<li><a href="https://chrome.google.com/webstore/detail/dheionainndbbpoacpnopgmnihkcmnkl" target="_blank"><div class="left chrome"></div><div class="right"><h2>Google Chrome</h2><p><span class="download">Download it &rsaquo;</span> <span class="versions">All versions &middot; <?php echo $downloadsc_out; ?></span></p></div></a></li>
-</ul>
-<ul>
-<li><a href="../gmailadremover/gmailadremover.safariextz"><div class="left safari"></div><div class="right"><h2>Safari</h2><p><span class="download">Download it &rsaquo;</span> <span class="versions">Safari 5 required</span></p></div></a></li>
-<li><a href="../gmailadremover/gmail-ad-remover.oex"><div class="left opera"></div><div class="right"><h2>Opera</h2><p><span class="download">Download it &rsaquo;</span> <span class="versions">Opera 11 required</span></p></div></a></li>
-</ul>
-
-<p class="please shadow">
-Once downloaded, please let me know whether you like Gmail&trade; Ad Remover by leaving a review, tweeting, liking the Facebook page.<br /> Don't hesitate to share Gmail&trade; Ad Remover among your friends and family. Thanks for your support! &mdash; Florian (<a href="http://twitter.com/xpressyoo" target="_blank">@xpressyoo</a>)
-</p>
-</div><!--#downloads-->
-
-<div id="content">
-
-<!--ABOUT-->
-<div id="about">
-<h2>About Gmail&trade; Ad Remover</h2>
-<p>
-<b><a href="http://florianbersier.com/gmailadremover">Gmail&trade; Ad Remover</a></b> is an extension or an addon that removes all the ads present in Gmail&trade; and proposes then a cleaner, better Gmail experience. It is free to use and available for <a href="http://www.mozilla.com/" target="_blank" rel="nofollow">Mozilla Firefox</a>, <a href="http://www.google.com/chrome" target="_blank" rel="nofollow">Google Chrome</a>, <a href="http://www.apple.com/safari" target="_blank" rel="nofollow">Safari 5</a> and <a href="http://www.opera.com" target="_blank" rel="nofollow">Opera 11</a>.
-</p>
-
-<p>More precisely, the current version of <b><a href="http://florianbersier.com/gmailadremover">Gmail&trade; Ad Remover</a></b> is the only extension available on the Web that removes completely and seamlessly all the ads you can find on Gmail and does much more. Its principal features are listed below:</p>
-<ul class="inline shadow">
-<li class="block"><ul>
-<li>&#x2714; No ads at the top of your inbox, i.e. web clips;</li>
-<li>&#x2714; No ads at the right of your message;</li>
-<li>&#x2714; No ads at the bottom of your message;</li>
-<li>&#x2714; No Google Products/Services ads in the footer;</li>
-<li>&#x2714; Email gets highlighted when mouse over;</li>
-</ul></li>
-<li class="block z"><ul>
-<li>&#x2714; Use the space left by ads to give you more room to read & write your messages;</li>
-<li>&#x2714; "Expand All / Collapse All" conversations button; <i>(available by default in the new Gmail)</i></li>
-<li>&#x2714; Hide Invite a Friend Field.</li>
-<li>&#x2714; Very light and unobtrusive in comparison to other extensions.</li>
-<li>&#x2714; The only extension that removes ALL ads.</li>
-</ul></li>
-</ul>
-</div><!--#about-->
-
-<!--Donate-->
-<div id="donate" class="shadow"><div id="coffee"></div>
-<h3>You like it, buy me a coffee!</h3>
-<p>Help supporting the development of Gmail&trade; Ad Remover by making a small contribution. Your support will be greatly appreciated! - Florian (<a href="http://twitter.com/xpressyoo" target="_blank">@xpressyoo</a>)</p>
-<div id="paypal">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-</form>
-</div>
-</div><!--#donate-->
-
-<!--FAQ-->
-<div id="faq">
-<h2>F.A.Q.</h2>
-<p>
-<span class="q">How does work Gmail&trade; Ad Remover?</span>
-<span class="a">Gmail&trade; Ad Remover injects some JavaScript and CSS into your browser to modify Gmail's appearance.</span>
-</p>
-<p>
-<span class="q">Can Gmail&trade; Ad Remover access my data?</span>
-<span class="a">No, it cannot.</span>
-</p>
-<p>
-<span class="q">What should I do once I've downloaded Gmail&trade; Ad Remover?</span>
-<span class="a">Just go to your Gmail and reload the page. You have now a new and cleaner Gmail. Hope you like it.</span>
-</p>
-<p>
-<span class="q">How do I know when a new version of Gmail&trade; Ad Remover is released?</span>
-<span class="a">New versions are announced on <a href="http://twitter.com/gmailadremover">Twitter</a> and <a href="https://www.facebook.com/pages/Gmail-Ad-Remover/218781674820326">Facebook</a>. <a href="http://twitter.com/gmailadremover">Follow us</a> and/or <a href="https://www.facebook.com/pages/Gmail-Ad-Remover/218781674820326">Like us</a>.</span>
-</p>
-<p>
-<span class="q">It does not work? Bug? Suggestion?</span>
-<span class="a">Tweet <a href="http://twitter.com/gmailadremover">@gmailadremover</a> or leave a post on the <a href="https://www.facebook.com/pages/Gmail-Ad-Remover/218781674820326">Facebook wall</a>.</span>
-</p>
-<p>
-<span class="q">You like Gmail&trade; Ad Remover?</span>
-<span class="a">That's great! Please share your love by spreading the word among your friends and family and do not forget to leave a review!</span>
-</p>
-<p>
-<span class="q">Is Gmail™ Ad Remover Legal?</span>
-<span class="a">Blocking an ad on the web is not more illegal than turning off your TV during the commercials! <a href="https://www.facebook.com/notes/gmail-ad-remover/is-gmail-ad-remover-legal/221009771264183">Complete answer to this question here</a></span>
-</p>
-</div><!--#faq-->
-
-<!--SOCIAL-->
-<div id="social">
-<ul class="inline2">
-<li class="comments">
-<script src="http://connect.facebook.net/en_US/all.js#appId=183710221684582&amp;xfbml=1"></script>
-<h2 class="margin">Reviews & Comments (<fb:comments-count href=http://florianbersier.com/gmailadremover/></fb:comments-count>)</h2>
-<div id="fb-root"></div><fb:comments href="florianbersier.com/gmailadremover/" num_posts="15" width="600"></fb:comments>
-<div id="like"><fb:like-box href="https://www.facebook.com/pages/Gmail-Ad-Remover/218781674820326" width="600" show_faces="false" border_color="#ffffff" stream="false" header="false"></fb:like-box></div>
-</li>
-
-<li class="testimonials">
-<h2>As Featured On</h2>
-<a class="enfew" href="http://www.enfew.com/firefox-addons-for-gmail-users-to-increase-productivity-save-time/" target="_blank" title="7 Firefox Addons for Gmail Users to increase productivity and save time">Enfew Magazine</a>
-
-<h2>Testimonials</h2>
-<blockquote>"The v3.0 works as expected on FF 5.0.I can't stand GMail without the Ad Remover anymore. Thanks for the useful add-on." July 2011</blockquote>
-<blockquote>"The only updated version for the new GMail !" July 2011</blockquote>
-<blockquote>"Great extension, works perfectly. At last no more ads. Thanks a lot!" May 2011</blockquote>
-<blockquote>"Does exactly what it says on the tin. Works perfectly." April 2011</blockquote>
-<blockquote>"Works great - no more ads. Thank you!" April 2011</blockquote>
-<blockquote>"AWESOME PLUGIN! HELP FOR Business owners." March 2011</blockquote>
-<blockquote>"Thank goodness! Why did I have to dig for this? This should be in the top 10!" May 2010</blockquote>
-<blockquote>"Wonderful... No ads on the left hand side which always seems to match what an email is about. As soon as I installed this add-on the ads were gone!" April 2010</blockquote>
-<blockquote>"Great! From all the alternatives I've tried the simplest way to remove ads from GMAIL. Well done! Works seamlessly!" April 2010</blockquote>
-</li>
-</ul>
-</div><!--#social-->
-
-</div><!--#content-->
-
-<!--Footer-->
-<div id="footer" class="clear">
-<p>&copy; 2010 &ndash; <?php echo date("Y"); ?> Gmail Ad Remover &middot; Developed by <a href="http://florianbersier.com">Florian Bersier</a> (<a href="http://twitter.com/xpressyoo" target="_blank">@xpressyoo</a>) &middot; <a href="http://gmail.com" target="_blank" rel="nofollow">Gmail</a> is a trademark of <a href="http://google.com" target="_blank" rel="nofollow">Google</a> Inc. | <a href="http://pilatesgeneva.com" target="_blank">Cours de Pilates à Genève</a></p>
-</div><!--#footer-->
-
-<div id="share">
-<ul>
-<li>
-<div id="fb-root"></div><fb:like href="http://florianbersier.com/gmailadremover/" send="false" layout="box_count" width="50" show_faces="false" font="Arial"></fb:like>
-</li>
-<li><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://florianbersier.com/gmailadremover/" data-text="Just installed #Gmail Ad Remover" data-count="vertical" data-via="gmailadremover" data-related="xpressyoo:Developer">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
-<li>
-<g:plusone size="tall" href="http://florianbersier.com/gmailadremover/"></g:plusone>
-</li>
-<li>
-<a class="FlattrButton" style="display:none;" href="http://florianbersier.com/gmailadremover/"></a>
-<noscript><a href="http://flattr.com/thing/319725/GmailTM-Ad-Remover" target="_blank">
-<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></noscript>
-</li>
-</ul>
-</div><!--#share-->
-</div><!--#wrapper-->
-
-
-<!--JS-->
-<script type="text/javascript">
-$(window).load(function() {
-$('#featured').orbit({
-animation: 'fade',               // fade, horizontal-slide, vertical-slide, horizontal-push
-animationSpeed: 800,            // how fast animations are
-timer: true, 			// true or false to have the timer
-advanceSpeed: 7000, 		// if timer is enabled, time between transitions 
-pauseOnHover: true, 		// if you hover pauses the slider
-startClockOnMouseOut: true, 	// if clock should start on MouseOut
-startClockOnMouseOutAfter: 1000, 
-captionAnimation: 'fade'
-});});
-</script>
-<!--PlusOne-->
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'en-GB'}</script>
-<!--Clipboard-->
-<script type="text/javascript" src="../gmailadremover/clipboard.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){$('a#copy').zclip({path:'gmailadremover/ZeroClipboard.swf',copy:$('span#url').text()});});
-</script>
-<!--Analytics-->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-12817064-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+  
 </body>
-
 </html>
