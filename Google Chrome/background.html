@@ -1,0 +1,68 @@
+<html>
+<head>
+<script>
+  function onInstall() {
+   chrome.tabs.create({
+        url: chrome.extension.getURL("options.html")
+    });
+  }
+
+  function onUpdate() {
+    chrome.tabs.create({
+        url: chrome.extension.getURL("options.html")
+    });
+  }
+
+  function getVersion() {
+    var details = chrome.app.getDetails();
+    return details.version;
+  }
+
+  // Check if the version has changed.
+  var currVersion = getVersion();
+  var prevVersion = localStorage['version']
+  if (currVersion != prevVersion) {
+    // Check if we just installed this extension.
+    if (typeof prevVersion == 'undefined') {
+      onInstall();
+    } else {
+      onUpdate();
+    }
+    localStorage['version'] = currVersion;
+  }
+
+// seek request and send response to content scripts
+chrome.extension.onRequest.addListener(function (request, sender, sendResponse) {
+    if (request.reqtype == 'o') {
+        sendResponse({
+            'o': JSON.parse(localStorage['options'])
+        });
+    }
+	if (request.action == "reload"){ reloadTab();}
+});
+function reloadTab() {
+	chrome.windows.getCurrent(function(win) {
+		var cwin = win.id;
+		chrome.tabs.getAllInWindow(cwin, function(tabs) {
+			for (var i = 0; i < tabs.length; i++) {
+				var t = tabs[i].url;
+				if (t.match('mail.google.com')) {
+					var tab = tabs[i];
+					chrome.tabs.update(tab.id, {url: tab.url, selected: tab.selected}, null);
+				}
+			}
+		});
+	});
+}
+// This event is fired with the user accepts the input in the omnibox.
+chrome.omnibox.onInputEntered.addListener(
+function(text) {console.log('inputEntered: ' + text);
+chrome.tabs.create({
+        url: chrome.extension.getURL("options.html")
+    });
+  });
+</script>
+</head>
+<body onload="init()">
+</body>
+</html>
